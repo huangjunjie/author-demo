@@ -156,3 +156,233 @@
 21-01-15 15:40:52.381 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysUserRoleMapper.xml]'
 21-01-15 15:40:52.692 [main] INFO  o.s.b.w.e.t.TomcatWebServer.start[203] - Tomcat started on port(s): 8001 (http) with context path ''
 21-01-15 15:40:52.704 [main] INFO  c.s.d.a.m.AuthMangoApplication.logStarted[61] - Started AuthMangoApplication in 6.89 seconds (JVM running for 8.335)
+21-01-15 15:53:05.251 [SpringContextShutdownHook] INFO  c.a.druid.pool.DruidDataSource.close[1948] - {dataSource-1} closing ...
+21-01-15 15:53:05.266 [SpringContextShutdownHook] INFO  c.a.druid.pool.DruidDataSource.close[2020] - {dataSource-1} closed
+21-01-15 15:53:05.267 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown[218] - Shutting down ExecutorService 'applicationTaskExecutor'
+21-01-15 15:53:15.096 [main] INFO  c.s.d.a.m.AuthMangoApplication.logStarting[55] - Starting AuthMangoApplication on stone-PC with PID 16983 (/home/stone/IdeaProjects/author-demo/auth-mango/target/classes started by stone in /home/stone/IdeaProjects/author-demo)
+21-01-15 15:53:15.113 [main] INFO  c.s.d.a.m.AuthMangoApplication.logStartupProfileInfo[651] - No active profile set, falling back to default profiles: default
+21-01-15 15:53:16.729 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysConfigMapper.class]
+21-01-15 15:53:16.729 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysDeptMapper.class]
+21-01-15 15:53:16.730 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysDictMapper.class]
+21-01-15 15:53:16.730 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysLogMapper.class]
+21-01-15 15:53:16.731 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysLoginLogMapper.class]
+21-01-15 15:53:16.732 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysMenuMapper.class]
+21-01-15 15:53:16.732 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysRoleDeptMapper.class]
+21-01-15 15:53:16.733 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysRoleMapper.class]
+21-01-15 15:53:16.734 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysRoleMenuMapper.class]
+21-01-15 15:53:16.734 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysUserMapper.class]
+21-01-15 15:53:16.735 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysUserRoleMapper.class]
+21-01-15 15:53:16.738 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysConfigMapper' and 'com.stone.demo.author.mango.dao.SysConfigMapper' mapperInterface
+21-01-15 15:53:16.739 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysConfigMapper'.
+21-01-15 15:53:16.740 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysDeptMapper' and 'com.stone.demo.author.mango.dao.SysDeptMapper' mapperInterface
+21-01-15 15:53:16.741 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysDeptMapper'.
+21-01-15 15:53:16.742 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysDictMapper' and 'com.stone.demo.author.mango.dao.SysDictMapper' mapperInterface
+21-01-15 15:53:16.742 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysDictMapper'.
+21-01-15 15:53:16.743 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysLogMapper' and 'com.stone.demo.author.mango.dao.SysLogMapper' mapperInterface
+21-01-15 15:53:16.743 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysLogMapper'.
+21-01-15 15:53:16.744 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysLoginLogMapper' and 'com.stone.demo.author.mango.dao.SysLoginLogMapper' mapperInterface
+21-01-15 15:53:16.744 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysLoginLogMapper'.
+21-01-15 15:53:16.745 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysMenuMapper' and 'com.stone.demo.author.mango.dao.SysMenuMapper' mapperInterface
+21-01-15 15:53:16.746 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysMenuMapper'.
+21-01-15 15:53:16.746 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysRoleDeptMapper' and 'com.stone.demo.author.mango.dao.SysRoleDeptMapper' mapperInterface
+21-01-15 15:53:16.747 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysRoleDeptMapper'.
+21-01-15 15:53:16.747 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysRoleMapper' and 'com.stone.demo.author.mango.dao.SysRoleMapper' mapperInterface
+21-01-15 15:53:16.748 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysRoleMapper'.
+21-01-15 15:53:16.748 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysRoleMenuMapper' and 'com.stone.demo.author.mango.dao.SysRoleMenuMapper' mapperInterface
+21-01-15 15:53:16.749 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysRoleMenuMapper'.
+21-01-15 15:53:16.749 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysUserMapper' and 'com.stone.demo.author.mango.dao.SysUserMapper' mapperInterface
+21-01-15 15:53:16.750 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysUserMapper'.
+21-01-15 15:53:16.750 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysUserRoleMapper' and 'com.stone.demo.author.mango.dao.SysUserRoleMapper' mapperInterface
+21-01-15 15:53:16.751 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysUserRoleMapper'.
+21-01-15 15:53:17.398 [main] INFO  o.s.b.w.e.t.TomcatWebServer.initialize[91] - Tomcat initialized with port(s): 8001 (http)
+21-01-15 15:53:17.412 [main] INFO  o.a.c.core.StandardService.log[173] - Starting service [Tomcat]
+21-01-15 15:53:17.413 [main] INFO  o.a.c.core.StandardEngine.log[173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+21-01-15 15:53:17.517 [main] INFO  o.a.c.c.C.[.[localhost].[/].log[173] - Initializing Spring embedded WebApplicationContext
+21-01-15 15:53:17.518 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext[283] - Root WebApplicationContext: initialization completed in 2201 ms
+21-01-15 15:53:17.925 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize[181] - Initializing ExecutorService 'applicationTaskExecutor'
+21-01-15 15:53:18.111 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure.dataSource[56] - Init DruidDataSource
+21-01-15 15:53:19.191 [main] INFO  c.a.druid.pool.DruidDataSource.init[1003] - {dataSource-1} inited
+21-01-15 15:53:19.557 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysConfigMapper.xml]'
+21-01-15 15:53:19.596 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysDeptMapper.xml]'
+21-01-15 15:53:19.633 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysDictMapper.xml]'
+21-01-15 15:53:19.674 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysLogMapper.xml]'
+21-01-15 15:53:19.722 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysLoginLogMapper.xml]'
+21-01-15 15:53:19.755 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysMenuMapper.xml]'
+21-01-15 15:53:19.781 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysRoleDeptMapper.xml]'
+21-01-15 15:53:19.805 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysRoleMapper.xml]'
+21-01-15 15:53:19.832 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysRoleMenuMapper.xml]'
+21-01-15 15:53:19.866 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysUserMapper.xml]'
+21-01-15 15:53:19.901 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysUserRoleMapper.xml]'
+21-01-15 15:53:20.227 [main] INFO  o.s.b.w.e.t.TomcatWebServer.start[203] - Tomcat started on port(s): 8001 (http) with context path ''
+21-01-15 15:53:20.239 [main] INFO  c.s.d.a.m.AuthMangoApplication.logStarted[61] - Started AuthMangoApplication in 6.459 seconds (JVM running for 7.486)
+21-01-15 15:53:24.382 [SpringContextShutdownHook] INFO  c.a.druid.pool.DruidDataSource.close[1948] - {dataSource-1} closing ...
+21-01-15 15:53:24.394 [SpringContextShutdownHook] INFO  c.a.druid.pool.DruidDataSource.close[2020] - {dataSource-1} closed
+21-01-15 15:53:24.396 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown[218] - Shutting down ExecutorService 'applicationTaskExecutor'
+21-01-15 15:53:29.612 [main] INFO  c.s.d.a.m.AuthMangoApplication.logStarting[55] - Starting AuthMangoApplication on stone-PC with PID 17154 (/home/stone/IdeaProjects/author-demo/auth-mango/target/classes started by stone in /home/stone/IdeaProjects/author-demo)
+21-01-15 15:53:29.629 [main] INFO  c.s.d.a.m.AuthMangoApplication.logStartupProfileInfo[651] - No active profile set, falling back to default profiles: default
+21-01-15 15:53:31.090 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysConfigMapper.class]
+21-01-15 15:53:31.091 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysDeptMapper.class]
+21-01-15 15:53:31.092 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysDictMapper.class]
+21-01-15 15:53:31.092 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysLogMapper.class]
+21-01-15 15:53:31.092 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysLoginLogMapper.class]
+21-01-15 15:53:31.093 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysMenuMapper.class]
+21-01-15 15:53:31.093 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysRoleDeptMapper.class]
+21-01-15 15:53:31.094 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysRoleMapper.class]
+21-01-15 15:53:31.094 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysRoleMenuMapper.class]
+21-01-15 15:53:31.094 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysUserMapper.class]
+21-01-15 15:53:31.095 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysUserRoleMapper.class]
+21-01-15 15:53:31.096 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysConfigMapper' and 'com.stone.demo.author.mango.dao.SysConfigMapper' mapperInterface
+21-01-15 15:53:31.097 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysConfigMapper'.
+21-01-15 15:53:31.098 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysDeptMapper' and 'com.stone.demo.author.mango.dao.SysDeptMapper' mapperInterface
+21-01-15 15:53:31.098 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysDeptMapper'.
+21-01-15 15:53:31.099 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysDictMapper' and 'com.stone.demo.author.mango.dao.SysDictMapper' mapperInterface
+21-01-15 15:53:31.099 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysDictMapper'.
+21-01-15 15:53:31.099 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysLogMapper' and 'com.stone.demo.author.mango.dao.SysLogMapper' mapperInterface
+21-01-15 15:53:31.100 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysLogMapper'.
+21-01-15 15:53:31.100 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysLoginLogMapper' and 'com.stone.demo.author.mango.dao.SysLoginLogMapper' mapperInterface
+21-01-15 15:53:31.100 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysLoginLogMapper'.
+21-01-15 15:53:31.101 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysMenuMapper' and 'com.stone.demo.author.mango.dao.SysMenuMapper' mapperInterface
+21-01-15 15:53:31.102 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysMenuMapper'.
+21-01-15 15:53:31.102 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysRoleDeptMapper' and 'com.stone.demo.author.mango.dao.SysRoleDeptMapper' mapperInterface
+21-01-15 15:53:31.103 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysRoleDeptMapper'.
+21-01-15 15:53:31.103 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysRoleMapper' and 'com.stone.demo.author.mango.dao.SysRoleMapper' mapperInterface
+21-01-15 15:53:31.104 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysRoleMapper'.
+21-01-15 15:53:31.104 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysRoleMenuMapper' and 'com.stone.demo.author.mango.dao.SysRoleMenuMapper' mapperInterface
+21-01-15 15:53:31.105 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysRoleMenuMapper'.
+21-01-15 15:53:31.105 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysUserMapper' and 'com.stone.demo.author.mango.dao.SysUserMapper' mapperInterface
+21-01-15 15:53:31.106 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysUserMapper'.
+21-01-15 15:53:31.107 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysUserRoleMapper' and 'com.stone.demo.author.mango.dao.SysUserRoleMapper' mapperInterface
+21-01-15 15:53:31.107 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysUserRoleMapper'.
+21-01-15 15:53:31.706 [main] INFO  o.s.b.w.e.t.TomcatWebServer.initialize[91] - Tomcat initialized with port(s): 8001 (http)
+21-01-15 15:53:31.719 [main] INFO  o.a.c.core.StandardService.log[173] - Starting service [Tomcat]
+21-01-15 15:53:31.720 [main] INFO  o.a.c.core.StandardEngine.log[173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+21-01-15 15:53:31.817 [main] INFO  o.a.c.c.C.[.[localhost].[/].log[173] - Initializing Spring embedded WebApplicationContext
+21-01-15 15:53:31.818 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext[283] - Root WebApplicationContext: initialization completed in 1931 ms
+21-01-15 15:53:32.094 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize[181] - Initializing ExecutorService 'applicationTaskExecutor'
+21-01-15 15:53:32.267 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure.dataSource[56] - Init DruidDataSource
+21-01-15 15:53:33.465 [main] INFO  c.a.druid.pool.DruidDataSource.init[1003] - {dataSource-1} inited
+21-01-15 15:53:33.732 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysConfigMapper.xml]'
+21-01-15 15:53:33.773 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysDeptMapper.xml]'
+21-01-15 15:53:33.799 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysDictMapper.xml]'
+21-01-15 15:53:33.821 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysLogMapper.xml]'
+21-01-15 15:53:33.841 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysLoginLogMapper.xml]'
+21-01-15 15:53:33.863 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysMenuMapper.xml]'
+21-01-15 15:53:33.884 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysRoleDeptMapper.xml]'
+21-01-15 15:53:33.903 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysRoleMapper.xml]'
+21-01-15 15:53:33.921 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysRoleMenuMapper.xml]'
+21-01-15 15:53:33.942 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysUserMapper.xml]'
+21-01-15 15:53:33.994 [main] DEBUG o.m.s.SqlSessionFactoryBean.debug[49] - Parsed mapper file: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysUserRoleMapper.xml]'
+21-01-15 15:53:34.176 [main] INFO  o.s.b.w.e.t.TomcatWebServer.start[203] - Tomcat started on port(s): 8001 (http) with context path ''
+21-01-15 15:53:34.181 [main] INFO  c.s.d.a.m.AuthMangoApplication.logStarted[61] - Started AuthMangoApplication in 5.662 seconds (JVM running for 6.793)
+21-01-15 16:01:20.309 [SpringContextShutdownHook] INFO  c.a.druid.pool.DruidDataSource.close[1948] - {dataSource-1} closing ...
+21-01-15 16:01:20.373 [SpringContextShutdownHook] INFO  c.a.druid.pool.DruidDataSource.close[2020] - {dataSource-1} closed
+21-01-15 16:01:20.376 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown[218] - Shutting down ExecutorService 'applicationTaskExecutor'
+21-01-15 16:15:42.016 [main] INFO  c.s.d.a.m.AuthMangoApplication.logStarting[55] - Starting AuthMangoApplication on stone-PC with PID 21952 (/home/stone/IdeaProjects/author-demo/auth-mango/target/classes started by stone in /home/stone/IdeaProjects/author-demo)
+21-01-15 16:15:42.033 [main] INFO  c.s.d.a.m.AuthMangoApplication.logStartupProfileInfo[651] - No active profile set, falling back to default profiles: default
+21-01-15 16:15:44.319 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysConfigMapper.class]
+21-01-15 16:15:44.320 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysDeptMapper.class]
+21-01-15 16:15:44.321 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysDictMapper.class]
+21-01-15 16:15:44.322 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysLogMapper.class]
+21-01-15 16:15:44.322 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysLoginLogMapper.class]
+21-01-15 16:15:44.323 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysMenuMapper.class]
+21-01-15 16:15:44.324 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysRoleDeptMapper.class]
+21-01-15 16:15:44.324 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysRoleMapper.class]
+21-01-15 16:15:44.325 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysRoleMenuMapper.class]
+21-01-15 16:15:44.325 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysUserMapper.class]
+21-01-15 16:15:44.326 [main] DEBUG o.m.s.m.ClassPathMapperScanner.scanCandidateComponents[435] - Identified candidate component class: file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/com/stone/demo/author/mango/dao/SysUserRoleMapper.class]
+21-01-15 16:15:44.329 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysConfigMapper' and 'com.stone.demo.author.mango.dao.SysConfigMapper' mapperInterface
+21-01-15 16:15:44.330 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysConfigMapper'.
+21-01-15 16:15:44.331 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysDeptMapper' and 'com.stone.demo.author.mango.dao.SysDeptMapper' mapperInterface
+21-01-15 16:15:44.332 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysDeptMapper'.
+21-01-15 16:15:44.332 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysDictMapper' and 'com.stone.demo.author.mango.dao.SysDictMapper' mapperInterface
+21-01-15 16:15:44.335 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysDictMapper'.
+21-01-15 16:15:44.337 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysLogMapper' and 'com.stone.demo.author.mango.dao.SysLogMapper' mapperInterface
+21-01-15 16:15:44.338 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysLogMapper'.
+21-01-15 16:15:44.339 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysLoginLogMapper' and 'com.stone.demo.author.mango.dao.SysLoginLogMapper' mapperInterface
+21-01-15 16:15:44.340 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysLoginLogMapper'.
+21-01-15 16:15:44.341 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysMenuMapper' and 'com.stone.demo.author.mango.dao.SysMenuMapper' mapperInterface
+21-01-15 16:15:44.341 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysMenuMapper'.
+21-01-15 16:15:44.342 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysRoleDeptMapper' and 'com.stone.demo.author.mango.dao.SysRoleDeptMapper' mapperInterface
+21-01-15 16:15:44.342 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysRoleDeptMapper'.
+21-01-15 16:15:44.343 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysRoleMapper' and 'com.stone.demo.author.mango.dao.SysRoleMapper' mapperInterface
+21-01-15 16:15:44.344 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysRoleMapper'.
+21-01-15 16:15:44.344 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysRoleMenuMapper' and 'com.stone.demo.author.mango.dao.SysRoleMenuMapper' mapperInterface
+21-01-15 16:15:44.345 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysRoleMenuMapper'.
+21-01-15 16:15:44.345 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysUserMapper' and 'com.stone.demo.author.mango.dao.SysUserMapper' mapperInterface
+21-01-15 16:15:44.346 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysUserMapper'.
+21-01-15 16:15:44.346 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Creating MapperFactoryBean with name 'sysUserRoleMapper' and 'com.stone.demo.author.mango.dao.SysUserRoleMapper' mapperInterface
+21-01-15 16:15:44.347 [main] DEBUG o.m.s.m.ClassPathMapperScanner.debug[49] - Enabling autowire by type for MapperFactoryBean with name 'sysUserRoleMapper'.
+21-01-15 16:15:45.192 [main] INFO  o.s.b.w.e.t.TomcatWebServer.initialize[91] - Tomcat initialized with port(s): 8001 (http)
+21-01-15 16:15:45.223 [main] INFO  o.a.c.core.StandardService.log[173] - Starting service [Tomcat]
+21-01-15 16:15:45.224 [main] INFO  o.a.c.core.StandardEngine.log[173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+21-01-15 16:15:45.382 [main] INFO  o.a.c.c.C.[.[localhost].[/].log[173] - Initializing Spring embedded WebApplicationContext
+21-01-15 16:15:45.383 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext[283] - Root WebApplicationContext: initialization completed in 3210 ms
+21-01-15 16:15:46.691 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize[181] - Initializing ExecutorService 'applicationTaskExecutor'
+21-01-15 16:15:47.262 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure.dataSource[56] - Init DruidDataSource
+21-01-15 16:15:48.548 [main] INFO  c.a.druid.pool.DruidDataSource.init[1003] - {dataSource-1} inited
+21-01-15 16:15:48.774 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh[559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysConfigMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysConfigMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.stone.demo.author.mango.dao.SysConfigMapper.BaseResultMap
+21-01-15 16:15:48.777 [main] INFO  c.a.druid.pool.DruidDataSource.close[1948] - {dataSource-1} closing ...
+21-01-15 16:15:48.786 [main] INFO  c.a.druid.pool.DruidDataSource.close[2020] - {dataSource-1} closed
+21-01-15 16:15:48.788 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown[218] - Shutting down ExecutorService 'applicationTaskExecutor'
+21-01-15 16:15:48.797 [main] INFO  o.a.c.core.StandardService.log[173] - Stopping service [Tomcat]
+21-01-15 16:15:48.814 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage[136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+21-01-15 16:15:48.824 [main] ERROR o.s.boot.SpringApplication.reportFailure[826] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysConfigMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysConfigMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.stone.demo.author.mango.dao.SysConfigMapper.BaseResultMap
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.stone.demo.author.mango.AuthMangoApplication.main(AuthMangoApplication.java:12)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysConfigMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysConfigMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.stone.demo.author.mango.dao.SysConfigMapper.BaseResultMap
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 19 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysConfigMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysConfigMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.stone.demo.author.mango.dao.SysConfigMapper.BaseResultMap
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:595)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:615)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:180)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$9f8cdf26.CGLIB$sqlSessionFactory$2(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$9f8cdf26$$FastClassBySpringCGLIB$$68fb43ac.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$9f8cdf26.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 20 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/home/stone/IdeaProjects/author-demo/auth-mango/target/classes/mappers/SysConfigMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.stone.demo.author.mango.dao.SysConfigMapper.BaseResultMap
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:122)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:593)
+	... 33 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.stone.demo.author.mango.dao.SysConfigMapper.BaseResultMap
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:947)
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:903)
+	at org.apache.ibatis.session.Configuration.addResultMap(Configuration.java:660)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addResultMap(MapperBuilderAssistant.java:209)
+	at org.apache.ibatis.builder.ResultMapResolver.resolve(ResultMapResolver.java:47)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:289)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:253)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:245)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 35 common frames omitted

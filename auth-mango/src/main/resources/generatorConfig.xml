@@ -47,16 +47,38 @@
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
         <!-- 指定数据库表 -->
-        <table schema="authorization_system2021" tableName="sys_config"></table>
-        <table schema="authorization_system2021" tableName="sys_dept"></table>
-        <table schema="authorization_system2021" tableName="sys_dict"></table>
-        <table schema="authorization_system2021" tableName="sys_log"></table>
-        <table schema="authorization_system2021" tableName="sys_login_log"></table>
-        <table schema="authorization_system2021" tableName="sys_menu"></table>
-        <table schema="authorization_system2021" tableName="sys_role"></table>
-        <table schema="authorization_system2021" tableName="sys_role_dept"></table>
-        <table schema="authorization_system2021" tableName="sys_role_menu"></table>
-        <table schema="authorization_system2021" tableName="sys_user"></table>
-        <table schema="authorization_system2021" tableName="sys_user_role"></table>
+        <table schema="authorization_system2021" tableName="sys_config" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table schema="authorization_system2021" tableName="sys_dept" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table schema="authorization_system2021" tableName="sys_dict" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table schema="authorization_system2021" tableName="sys_log" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table schema="authorization_system2021" tableName="sys_login_log" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table schema="authorization_system2021" tableName="sys_menu" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table schema="authorization_system2021" tableName="sys_role" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table schema="authorization_system2021" tableName="sys_role_dept" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table schema="authorization_system2021" tableName="sys_role_menu" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table schema="authorization_system2021" tableName="sys_user" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table schema="authorization_system2021" tableName="sys_user_role" enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false"></table>
     </context>
 </generatorConfiguration>

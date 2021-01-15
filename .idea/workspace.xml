@@ -2,16 +2,70 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3db65a0b-ea67-4a8d-a2d0-5d21d0c48a98" name="Default Changelist" comment="SR-0002 添加README、修改项目结构">
-      <change afterPath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/AuthMangoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/configuration/DruidConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-mango/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-mango/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-mango/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/configuration/SwaggerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-mango/src/main/resources/banner.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-mango/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-mango/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysConfigExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysDept.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysDeptExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysDict.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysDictExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysLogExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysLoginLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysLoginLogExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysMenuExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysRoleDept.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysRoleDeptExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysRoleExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysRoleMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysRoleMenuExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysUserExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysUserRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/bean/po/SysUserRoleExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/dao/SysConfigMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/dao/SysDeptMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/dao/SysDictMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/dao/SysLogMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/dao/SysLoginLogMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/dao/SysMenuMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/dao/SysRoleDeptMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/dao/SysRoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/dao/SysRoleMenuMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/dao/SysUserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/dao/SysUserRoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-mango/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/resources/mappers/SysConfigMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/resources/mappers/SysDeptMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/resources/mappers/SysDictMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/resources/mappers/SysLogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/resources/mappers/SysLoginLogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/resources/mappers/SysMenuMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/resources/mappers/SysRoleDeptMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/resources/mappers/SysRoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/resources/mappers/SysRoleMenuMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/resources/mappers/SysUserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/src/main/resources/mappers/SysUserRoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysConfigMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysConfigMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysDeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysDeptMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysDictMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysDictMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysLoginLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysLoginLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysMenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysRoleDeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysRoleDeptMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysRoleMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysRoleMenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysUserRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-mango/target/classes/mappers/SysUserRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/auth-mango/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-mango/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/auth-mango/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/common-all.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/common-all.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/common-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/common-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,18 +84,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="180">
-                <caret line="10" selection-start-line="10" selection-end-line="10" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/author-common/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,11 +107,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auth-mango/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+            <state relative-caret-position="212">
+              <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/configuration/SwaggerConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="22" column="43" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-core/2.6.1/springfox-core-2.6.1.jar!/springfox/documentation/builders/ApiInfoBuilder.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -77,7 +140,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auth-mango/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
+            <state relative-caret-position="374">
               <caret line="63" column="38" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="38" />
             </state>
           </provider>
@@ -86,8 +149,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auth-mango/src/main/resources/logback-spring.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+            <state relative-caret-position="284">
+              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -95,17 +158,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
+            <state relative-caret-position="198">
+              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/auth-mango/src/main/resources/generatorConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="60" />
+            <state relative-caret-position="264">
+              <caret line="39" column="53" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -115,15 +178,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.10.RELEASE/spring-boot-autoconfigure-2.2.10.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -153,13 +207,16 @@
         <option value="$PROJECT_DIR$/author-db/src/ddl/ddl_SR_001.sql" />
         <option value="$PROJECT_DIR$/README.MD" />
         <option value="$PROJECT_DIR$/auth-mango/src/main/resources/application-config.yml" />
-        <option value="$PROJECT_DIR$/auth-mango/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/configuration/DruidConfiguration.java" />
         <option value="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/AuthMangoApplication.java" />
         <option value="$PROJECT_DIR$/auth-mango/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/auth-mango/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/auth-mango/src/main/resources/banner.txt" />
+        <option value="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/configuration/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/auth-mango/pom.xml" />
+        <option value="$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/configuration/SwaggerConfiguration.java" />
+        <option value="$PROJECT_DIR$/auth-mango/src/main/resources/generatorConfig.xml" />
       </list>
     </option>
   </component>
@@ -186,18 +243,21 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="auth-mango" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="auth-mango" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="auth-mango" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="author-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="author-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
@@ -231,7 +291,91 @@
             </path>
             <path>
               <item name="author-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="author-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-mango" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="author-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="author-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-mango" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="author-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="author-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-mango" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="author-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="author-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-mango" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mango" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="author-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="author-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-mango" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mango" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="author-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="author-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-mango" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mango" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+              <item name="po" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="author-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="author-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-mango" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mango" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="author-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="author-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-mango" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mango" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="author-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="author-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-mango" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="author-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="author-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-mango" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mappers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -314,7 +458,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610606834297</updated>
-      <workItem from="1610606837169" duration="12449000" />
+      <workItem from="1610606837169" duration="14806000" />
     </task>
     <task id="LOCAL-00001" summary="SR-0001 修改文件位置">
       <created>1610626592602</created>
@@ -334,7 +478,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12449000" />
+    <option name="totallyTimeSpent" value="14806000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -354,8 +498,10 @@
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
+      <window_info id="Web" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33459213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Spring" order="0" weight="0.329653" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.62776023" />
       <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
@@ -363,9 +509,9 @@
       <window_info anchor="bottom" id="Database Changes" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.329653" />
       <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49773413" weight="0.81072557" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4984227" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.329653" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49773413" weight="0.28706625" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.659306" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.329653" />
@@ -376,6 +522,7 @@
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Bean Validation" weight="0.32930514" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -445,13 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth-mango/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/AuthMangoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -464,30 +604,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth-mango/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="63" column="38" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/common-all.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-270" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-mango/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/author-common/pom.xml">
@@ -497,10 +616,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/auth-mango/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-mango/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-mango/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="63" column="38" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/auth-mango/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        <state relative-caret-position="212">
+          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-core/2.6.1/springfox-core-2.6.1.jar!/springfox/documentation/builders/ApiInfoBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-mango/src/main/java/com/stone/demo/author/mango/configuration/SwaggerConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-mango/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="39" column="53" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="53" />
         </state>
       </provider>
     </entry>
