@@ -1,29 +1,29 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.stone.demo.author.mango.dao.SysRoleDeptMapper" >
-  <resultMap id="BaseResultMap" type="com.stone.demo.author.mango.bean.po.SysRoleDept" >
-    <id column="id" property="id" jdbcType="BIGINT" />
-    <result column="role_id" property="roleId" jdbcType="BIGINT" />
-    <result column="dept_id" property="deptId" jdbcType="BIGINT" />
-    <result column="create_by" property="createBy" jdbcType="VARCHAR" />
-    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
-    <result column="last_update_by" property="lastUpdateBy" jdbcType="VARCHAR" />
-    <result column="last_update_time" property="lastUpdateTime" jdbcType="TIMESTAMP" />
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.stone.demo.author.mango.dao.SysRoleDeptMapper">
+  <resultMap id="BaseResultMap" type="com.stone.demo.author.mango.bean.po.SysRoleDept">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="role_id" jdbcType="BIGINT" property="roleId" />
+    <result column="dept_id" jdbcType="BIGINT" property="deptId" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="last_update_by" jdbcType="VARCHAR" property="lastUpdateBy" />
+    <result column="last_update_time" jdbcType="TIMESTAMP" property="lastUpdateTime" />
   </resultMap>
-  <sql id="Base_Column_List" >
+  <sql id="Base_Column_List">
     id, role_id, dept_id, create_by, create_time, last_update_by, last_update_time
   </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from sys_role_dept
     where id = #{id,jdbcType=BIGINT}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from sys_role_dept
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.stone.demo.author.mango.bean.po.SysRoleDept" >
+  <insert id="insert" parameterType="com.stone.demo.author.mango.bean.po.SysRoleDept">
     insert into sys_role_dept (id, role_id, dept_id, 
       create_by, create_time, last_update_by, 
       last_update_time)
@@ -31,80 +31,80 @@
       #{createBy,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{lastUpdateBy,jdbcType=VARCHAR}, 
       #{lastUpdateTime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.stone.demo.author.mango.bean.po.SysRoleDept" >
+  <insert id="insertSelective" parameterType="com.stone.demo.author.mango.bean.po.SysRoleDept">
     insert into sys_role_dept
-    <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
         id,
       </if>
-      <if test="roleId != null" >
+      <if test="roleId != null">
         role_id,
       </if>
-      <if test="deptId != null" >
+      <if test="deptId != null">
         dept_id,
       </if>
-      <if test="createBy != null" >
+      <if test="createBy != null">
         create_by,
       </if>
-      <if test="createTime != null" >
+      <if test="createTime != null">
         create_time,
       </if>
-      <if test="lastUpdateBy != null" >
+      <if test="lastUpdateBy != null">
         last_update_by,
       </if>
-      <if test="lastUpdateTime != null" >
+      <if test="lastUpdateTime != null">
         last_update_time,
       </if>
     </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
         #{id,jdbcType=BIGINT},
       </if>
-      <if test="roleId != null" >
+      <if test="roleId != null">
         #{roleId,jdbcType=BIGINT},
       </if>
-      <if test="deptId != null" >
+      <if test="deptId != null">
         #{deptId,jdbcType=BIGINT},
       </if>
-      <if test="createBy != null" >
+      <if test="createBy != null">
         #{createBy,jdbcType=VARCHAR},
       </if>
-      <if test="createTime != null" >
+      <if test="createTime != null">
         #{createTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="lastUpdateBy != null" >
+      <if test="lastUpdateBy != null">
         #{lastUpdateBy,jdbcType=VARCHAR},
       </if>
-      <if test="lastUpdateTime != null" >
+      <if test="lastUpdateTime != null">
         #{lastUpdateTime,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.stone.demo.author.mango.bean.po.SysRoleDept" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.stone.demo.author.mango.bean.po.SysRoleDept">
     update sys_role_dept
-    <set >
-      <if test="roleId != null" >
+    <set>
+      <if test="roleId != null">
         role_id = #{roleId,jdbcType=BIGINT},
       </if>
-      <if test="deptId != null" >
+      <if test="deptId != null">
         dept_id = #{deptId,jdbcType=BIGINT},
       </if>
-      <if test="createBy != null" >
+      <if test="createBy != null">
         create_by = #{createBy,jdbcType=VARCHAR},
       </if>
-      <if test="createTime != null" >
+      <if test="createTime != null">
         create_time = #{createTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="lastUpdateBy != null" >
+      <if test="lastUpdateBy != null">
         last_update_by = #{lastUpdateBy,jdbcType=VARCHAR},
       </if>
-      <if test="lastUpdateTime != null" >
+      <if test="lastUpdateTime != null">
         last_update_time = #{lastUpdateTime,jdbcType=TIMESTAMP},
       </if>
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.stone.demo.author.mango.bean.po.SysRoleDept" >
+  <update id="updateByPrimaryKey" parameterType="com.stone.demo.author.mango.bean.po.SysRoleDept">
     update sys_role_dept
     set role_id = #{roleId,jdbcType=BIGINT},
       dept_id = #{deptId,jdbcType=BIGINT},
