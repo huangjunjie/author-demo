@@ -2,6 +2,8 @@ package com.stone.demo.author.mango.dao;
 
 import com.stone.demo.author.mango.bean.po.SysUserRole;
 
+import java.util.List;
+
 public interface SysUserRoleMapper {
     int deleteByPrimaryKey(Long id);
 
@@ -14,4 +16,6 @@ public interface SysUserRoleMapper {
     int updateByPrimaryKeySelective(SysUserRole record);
 
     int updateByPrimaryKey(SysUserRole record);
+
+    List<SysUserRole> findPage();
 }

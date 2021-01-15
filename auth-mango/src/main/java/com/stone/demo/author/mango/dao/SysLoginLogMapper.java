@@ -2,6 +2,8 @@ package com.stone.demo.author.mango.dao;
 
 import com.stone.demo.author.mango.bean.po.SysLoginLog;
 
+import java.util.List;
+
 public interface SysLoginLogMapper {
     int deleteByPrimaryKey(Long id);
 
@@ -14,4 +16,7 @@ public interface SysLoginLogMapper {
     int updateByPrimaryKeySelective(SysLoginLog record);
 
     int updateByPrimaryKey(SysLoginLog record);
+
+    List<SysLoginLog> findPage();
+
 }

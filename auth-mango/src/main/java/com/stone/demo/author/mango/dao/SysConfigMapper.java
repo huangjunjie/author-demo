@@ -2,6 +2,8 @@ package com.stone.demo.author.mango.dao;
 
 import com.stone.demo.author.mango.bean.po.SysConfig;
 
+import java.util.List;
+
 public interface SysConfigMapper {
     int deleteByPrimaryKey(Long id);
 
@@ -14,4 +16,6 @@ public interface SysConfigMapper {
     int updateByPrimaryKeySelective(SysConfig record);
 
     int updateByPrimaryKey(SysConfig record);
+
+    List<SysConfig> findPage();
 }

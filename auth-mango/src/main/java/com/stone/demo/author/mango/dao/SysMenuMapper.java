@@ -2,6 +2,8 @@ package com.stone.demo.author.mango.dao;
 
 import com.stone.demo.author.mango.bean.po.SysMenu;
 
+import java.util.List;
+
 public interface SysMenuMapper {
     int deleteByPrimaryKey(Long id);
 
@@ -14,4 +16,6 @@ public interface SysMenuMapper {
     int updateByPrimaryKeySelective(SysMenu record);
 
     int updateByPrimaryKey(SysMenu record);
+
+    List<SysMenu> findPage();
 }
