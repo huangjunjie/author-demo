@@ -5,8 +5,10 @@ import com.stone.demo.author.mango.bean.vo.PageRequest;
 import com.stone.demo.author.mango.bean.vo.PageResult;
 import com.stone.demo.author.mango.dao.SysConfigMapper;
 import com.stone.demo.author.mango.serivce.SysConfigService;
+import com.stone.demo.author.mango.utils.MybatisPageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ObjectUtils;
 
 import java.util.List;
 
@@ -21,6 +23,8 @@ import java.util.List;
 @Service
 public class SysConfigServiceImpl implements SysConfigService {
 
+    public static final int FAIL_RETURN = -1;
+    public static final int SUCCESS_RETURN = 1;
     @Autowired
     private SysConfigMapper sysConfigMapper;
 
@@ -32,7 +36,7 @@ public class SysConfigServiceImpl implements SysConfigService {
      */
     @Override
     public int save(SysConfig record) {
-        return 0;
+        return sysConfigMapper.insert(record);
     }
 
     /***
@@ -43,7 +47,10 @@ public class SysConfigServiceImpl implements SysConfigService {
      */
     @Override
     public int delete(SysConfig record) {
-        return 0;
+        if (record != null && record.getId() != null) {
+            return sysConfigMapper.deleteByPrimaryKey(record.getId());
+        }
+        return FAIL_RETURN;
     }
 
     /**
@@ -54,7 +61,12 @@ public class SysConfigServiceImpl implements SysConfigService {
      */
     @Override
     public int delete(List<SysConfig> records) {
-        return 0;
+        if (!ObjectUtils.isEmpty(records)) {
+            records.stream().forEach(it ->
+                    sysConfigMapper.deleteByPrimaryKey(it.getId())
+            );
+        }
+        return SUCCESS_RETURN;
     }
 
     /**
@@ -65,7 +77,7 @@ public class SysConfigServiceImpl implements SysConfigService {
      */
     @Override
     public SysConfig findById(Long id) {
-        return null;
+        return sysConfigMapper.selectByPrimaryKey(id);
     }
 
     /**
@@ -76,6 +88,6 @@ public class SysConfigServiceImpl implements SysConfigService {
      */
     @Override
     public PageResult findPage(PageRequest request) {
-        return null;
+        return MybatisPageHelper.findPage(request,sysConfigMapper);
     }
 }

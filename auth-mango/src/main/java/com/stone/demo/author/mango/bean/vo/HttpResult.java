@@ -1,5 +1,7 @@
 package com.stone.demo.author.mango.bean.vo;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import org.springframework.http.HttpStatus;
 
 /***
@@ -9,12 +11,16 @@ import org.springframework.http.HttpStatus;
  * @author stone
  * @date 2021 - 1 - 15
  */
+@ApiModel(description ="HTTP 结果封装实体",value ="HttpResult")
 public class HttpResult {
 
+    @ApiModelProperty(name ="请求编码" ,value ="默认200")
     private int code = 200;
 
+    @ApiModelProperty(name ="消息")
     private String msg;
 
+    @ApiModelProperty(name ="数据")
     private Object data;
 
     public static HttpResult error() {
