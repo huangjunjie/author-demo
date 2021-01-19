@@ -3,6 +3,7 @@ package com.stone.demo.author.mango.serivce.impl;
 import com.stone.demo.author.mango.bean.po.SysConfig;
 import com.stone.demo.author.mango.bean.vo.PageRequest;
 import com.stone.demo.author.mango.bean.vo.PageResult;
+import com.stone.demo.author.mango.constants.SysConstants;
 import com.stone.demo.author.mango.dao.SysConfigMapper;
 import com.stone.demo.author.mango.serivce.SysConfigService;
 import com.stone.demo.author.mango.utils.MybatisPageHelper;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
 import java.util.List;
+import java.util.Optional;
 
 /***
  *
@@ -23,8 +25,7 @@ import java.util.List;
 @Service
 public class SysConfigServiceImpl implements SysConfigService {
 
-    public static final int FAIL_RETURN = -1;
-    public static final int SUCCESS_RETURN = 1;
+
     @Autowired
     private SysConfigMapper sysConfigMapper;
 
@@ -36,7 +37,11 @@ public class SysConfigServiceImpl implements SysConfigService {
      */
     @Override
     public int save(SysConfig record) {
-        return sysConfigMapper.insert(record);
+        if (record.getId() == null || record.getId() == 0) {
+            return sysConfigMapper.insert(record);
+        } else {
+            return sysConfigMapper.updateByPrimaryKey(record);
+        }
     }
 
     /***
@@ -50,7 +55,7 @@ public class SysConfigServiceImpl implements SysConfigService {
         if (record != null && record.getId() != null) {
             return sysConfigMapper.deleteByPrimaryKey(record.getId());
         }
-        return FAIL_RETURN;
+        return SysConstants.FAIL_RETURN;
     }
 
     /**
@@ -62,11 +67,11 @@ public class SysConfigServiceImpl implements SysConfigService {
     @Override
     public int delete(List<SysConfig> records) {
         if (!ObjectUtils.isEmpty(records)) {
-            records.stream().forEach(it ->
-                    sysConfigMapper.deleteByPrimaryKey(it.getId())
-            );
+            for (SysConfig record : records) {
+                delete(record);
+            }
         }
-        return SUCCESS_RETURN;
+        return SysConstants.SUCCESS_RETURN;
     }
 
     /**
@@ -88,6 +93,16 @@ public class SysConfigServiceImpl implements SysConfigService {
      */
     @Override
     public PageResult findPage(PageRequest request) {
+        Optional label = request.getParams("label");
+        if(label.isPresent()) {
+            return MybatisPageHelper.findPage(request, sysConfigMapper, "findPageByLabel", label);
+        }
         return MybatisPageHelper.findPage(request,sysConfigMapper);
     }
+
+    @Override
+    public List<SysConfig> findByLabel(String label) {
+        return sysConfigMapper.findByLabel(label);
+    }
+
 }

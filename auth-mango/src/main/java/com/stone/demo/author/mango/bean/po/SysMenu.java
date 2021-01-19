@@ -1,6 +1,7 @@
 package com.stone.demo.author.mango.bean.po;
 
 import java.util.Date;
+import java.util.List;
 
 public class SysMenu {
     private Long id;
@@ -28,6 +29,13 @@ public class SysMenu {
     private Date lastUpdateTime;
 
     private Byte delFlag;
+
+    private Integer level;
+
+    private String parentName;
+
+    private List<SysMenu> children;
+
 
     public Long getId() {
         return id;
@@ -131,5 +139,29 @@ public class SysMenu {
 
     public void setDelFlag(Byte delFlag) {
         this.delFlag = delFlag;
+    }
+
+    public Integer getLevel() {
+        return level;
+    }
+
+    public void setLevel(Integer level) {
+        this.level = level;
+    }
+
+    public String getParentName() {
+        return parentName;
+    }
+
+    public void setParentName(String parentName) {
+        this.parentName = parentName;
+    }
+
+    public List<SysMenu> getChildren() {
+        return children;
+    }
+
+    public void setChildren(List<SysMenu> children) {
+        this.children = children;
     }
 }

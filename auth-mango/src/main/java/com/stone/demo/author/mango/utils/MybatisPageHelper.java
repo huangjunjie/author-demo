@@ -45,7 +45,7 @@ public class MybatisPageHelper {
      * @return
      */
     @SuppressWarnings({"unchecked", "rawtypes"})
-    private static PageResult findPage(PageRequest request, Object objectMapper, String findPage, Object... args) {
+    public static PageResult findPage(PageRequest request, Object objectMapper, String findPage, Object... args) {
         // 设置分页参数
         int pageNum = request.getPageNum();
         int pageSize = request.getPageSize();
@@ -53,7 +53,7 @@ public class MybatisPageHelper {
         // 利用反射调用查询方法
         Object result = null;
         try {
-            result = ReflectionUtils.invokeMethod(objectMapper.getClass().getMethod(findPage), args);
+            result = ReflectionUtils.invokeMethod(objectMapper.getClass().getMethod(findPage), objectMapper, args);
         } catch (NoSuchMethodException e) {
             log.info("[com.stone.demo.author.mango.utils.MybatisPageHelper] Invoke Method Failure ." +
                     " params : request = {} , objectMapper = {}", request, objectMapper);

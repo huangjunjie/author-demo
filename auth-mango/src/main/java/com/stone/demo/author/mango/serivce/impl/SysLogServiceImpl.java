@@ -3,12 +3,15 @@ package com.stone.demo.author.mango.serivce.impl;
 import com.stone.demo.author.mango.bean.po.SysLog;
 import com.stone.demo.author.mango.bean.vo.PageRequest;
 import com.stone.demo.author.mango.bean.vo.PageResult;
+import com.stone.demo.author.mango.constants.SysConstants;
 import com.stone.demo.author.mango.dao.SysLogMapper;
 import com.stone.demo.author.mango.serivce.SysLogService;
+import com.stone.demo.author.mango.utils.MybatisPageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 /***
  *
@@ -32,7 +35,10 @@ public class SysLogServiceImpl implements SysLogService {
      */
     @Override
     public int save(SysLog record) {
-        return 0;
+        if(record.getId() == null || record.getId() == 0) {
+            return sysLogMapper.insertSelective(record);
+        }
+        return sysLogMapper.updateByPrimaryKeySelective(record);
     }
 
     /***
@@ -43,7 +49,7 @@ public class SysLogServiceImpl implements SysLogService {
      */
     @Override
     public int delete(SysLog record) {
-        return 0;
+        return sysLogMapper.deleteByPrimaryKey(record.getId());
     }
 
     /**
@@ -54,7 +60,10 @@ public class SysLogServiceImpl implements SysLogService {
      */
     @Override
     public int delete(List<SysLog> records) {
-        return 0;
+        for(SysLog record:records) {
+            delete(record);
+        }
+        return SysConstants.SUCCESS_RETURN;
     }
 
     /**
@@ -65,7 +74,7 @@ public class SysLogServiceImpl implements SysLogService {
      */
     @Override
     public SysLog findById(Long id) {
-        return null;
+        return sysLogMapper.selectByPrimaryKey(id);
     }
 
     /**
@@ -76,6 +85,10 @@ public class SysLogServiceImpl implements SysLogService {
      */
     @Override
     public PageResult findPage(PageRequest request) {
-        return null;
+        Optional label = request.getParams("userName");
+        if(label.isPresent()) {
+            return MybatisPageHelper.findPage(request, sysLogMapper, "findPageByUserName", label);
+        }
+        return MybatisPageHelper.findPage(request, sysLogMapper);
     }
 }

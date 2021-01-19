@@ -29,6 +29,7 @@
         <fastjson.version>1.2.70</fastjson.version>
         <swagger2.version>2.6.1</swagger2.version>
         <pagehelper.version>1.2.10</pagehelper.version>
+        <filedownload.version>2.6</filedownload.version>
     </properties>
 
 
@@ -115,6 +116,11 @@
                 <version>${pagehelper.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${filedownload.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

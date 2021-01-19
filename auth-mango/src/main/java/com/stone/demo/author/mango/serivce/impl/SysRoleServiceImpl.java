@@ -1,14 +1,21 @@
 package com.stone.demo.author.mango.serivce.impl;
 
+import com.stone.demo.author.mango.bean.po.SysMenu;
 import com.stone.demo.author.mango.bean.po.SysRole;
+import com.stone.demo.author.mango.bean.po.SysRoleMenu;
 import com.stone.demo.author.mango.bean.vo.PageRequest;
 import com.stone.demo.author.mango.bean.vo.PageResult;
+import com.stone.demo.author.mango.constants.SysConstants;
+import com.stone.demo.author.mango.dao.SysMenuMapper;
 import com.stone.demo.author.mango.dao.SysRoleMapper;
+import com.stone.demo.author.mango.dao.SysRoleMenuMapper;
 import com.stone.demo.author.mango.serivce.SysRoleService;
+import com.stone.demo.author.mango.utils.MybatisPageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 /***
  *
@@ -24,6 +31,12 @@ public class SysRoleServiceImpl implements SysRoleService {
     @Autowired
     private SysRoleMapper sysRoleMapper;
 
+    @Autowired
+    private SysRoleMenuMapper sysRoleMenuMapper;
+
+    @Autowired
+    private SysMenuMapper sysMenuMapper;
+
     /**
      * 通用保存接口
      *
@@ -32,7 +45,10 @@ public class SysRoleServiceImpl implements SysRoleService {
      */
     @Override
     public int save(SysRole record) {
-        return 0;
+        if(record.getId() == null || record.getId() == 0) {
+            return sysRoleMapper.insertSelective(record);
+        }
+        return sysRoleMapper.updateByPrimaryKeySelective(record);
     }
 
     /***
@@ -43,7 +59,7 @@ public class SysRoleServiceImpl implements SysRoleService {
      */
     @Override
     public int delete(SysRole record) {
-        return 0;
+        return sysRoleMapper.deleteByPrimaryKey(record.getId());
     }
 
     /**
@@ -54,7 +70,10 @@ public class SysRoleServiceImpl implements SysRoleService {
      */
     @Override
     public int delete(List<SysRole> records) {
-        return 0;
+        for(SysRole record:records) {
+            delete(record);
+        }
+        return SysConstants.SUCCESS_RETURN;
     }
 
     /**
@@ -65,7 +84,7 @@ public class SysRoleServiceImpl implements SysRoleService {
      */
     @Override
     public SysRole findById(Long id) {
-        return null;
+        return sysRoleMapper.selectByPrimaryKey(id);
     }
 
     /**
@@ -76,6 +95,68 @@ public class SysRoleServiceImpl implements SysRoleService {
      */
     @Override
     public PageResult findPage(PageRequest request) {
-        return null;
+        Optional label = request.getParams("name");
+        if(label .isPresent()) {
+            return MybatisPageHelper.findPage(request, sysRoleMapper, "findPageByName", label.get());
+        }
+        return MybatisPageHelper.findPage(request, sysRoleMapper);
+    }
+
+    /**
+     * 查询全部
+     *
+     * @return
+     */
+    @Override
+    public List<SysRole> findAll() {
+        return sysRoleMapper.findAll();
+    }
+
+
+
+    /**
+     * 查询角色菜单集合
+     *
+     * @param roleId
+     * @return
+     */
+    @Override
+    public List<SysMenu> findRoleMenus(Long roleId) {
+        SysRole sysRole = sysRoleMapper.selectByPrimaryKey(roleId);
+        if(SysConstants.ADMIN.equalsIgnoreCase(sysRole.getName())) {
+            // 如果是超级管理员，返回全部
+            return sysMenuMapper.findAll();
+        }
+        return sysMenuMapper.findRoleMenus(roleId);
+    }
+
+    /**
+     * 保存角色菜单
+     *
+     * @param records
+     * @return
+     */
+    @Override
+    public int saveRoleMenus(List<SysRoleMenu> records) {
+        if(records == null || records.isEmpty()) {
+            return SysConstants.SUCCESS_RETURN;
+        }
+        Long roleId = records.get(0).getRoleId();
+        sysRoleMenuMapper.deleteByRoleId(roleId);
+        for(SysRoleMenu record:records) {
+            sysRoleMenuMapper.insertSelective(record);
+        }
+        return SysConstants.SUCCESS_RETURN;
+    }
+
+    /**
+     * 根据名称查询
+     *
+     * @param name
+     * @return
+     */
+    @Override
+    public List<SysRole> findByName(String name) {
+        return sysRoleMapper.findByName(name);
     }
 }

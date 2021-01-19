@@ -1,6 +1,7 @@
 package com.stone.demo.author.mango.bean.po;
 
 import java.util.Date;
+import java.util.List;
 
 public class SysDept {
     private Long id;
@@ -20,6 +21,12 @@ public class SysDept {
     private Date lastUpdateTime;
 
     private Byte delFlag;
+
+    private List<SysDept> children;
+
+    private Integer level;
+
+    private String parentName;
 
     public Long getId() {
         return id;
@@ -91,5 +98,29 @@ public class SysDept {
 
     public void setDelFlag(Byte delFlag) {
         this.delFlag = delFlag;
+    }
+
+    public List<SysDept> getChildren() {
+        return children;
+    }
+
+    public void setChildren(List<SysDept> children) {
+        this.children = children;
+    }
+
+    public Integer getLevel() {
+        return level;
+    }
+
+    public void setLevel(Integer level) {
+        this.level = level;
+    }
+
+    public String getParentName() {
+        return parentName;
+    }
+
+    public void setParentName(String parentName) {
+        this.parentName = parentName;
     }
 }

@@ -5,6 +5,7 @@ import com.stone.demo.author.mango.bean.po.SysRoleMenu;
 import java.util.List;
 
 public interface SysRoleMenuMapper {
+
     int deleteByPrimaryKey(Long id);
 
     int insert(SysRoleMenu record);
@@ -18,4 +19,6 @@ public interface SysRoleMenuMapper {
     int updateByPrimaryKey(SysRoleMenu record);
 
     List<SysRoleMenu> findPage();
+
+    int deleteByRoleId(Long roleId);
 }

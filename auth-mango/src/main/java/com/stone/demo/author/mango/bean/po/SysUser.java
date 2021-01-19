@@ -1,6 +1,7 @@
 package com.stone.demo.author.mango.bean.po;
 
 import java.util.Date;
+import java.util.List;
 
 public class SysUser {
     private Long id;
@@ -32,6 +33,10 @@ public class SysUser {
     private Date lastUpdateTime;
 
     private Byte delFlag;
+
+    private String roleNames;
+
+    private List<SysUserRole> userRoles;
 
     public Long getId() {
         return id;
@@ -151,5 +156,21 @@ public class SysUser {
 
     public void setDelFlag(Byte delFlag) {
         this.delFlag = delFlag;
+    }
+
+    public List<SysUserRole> getUserRoles() {
+        return userRoles;
+    }
+
+    public void setUserRoles(List<SysUserRole> userRoles) {
+        this.userRoles = userRoles;
+    }
+
+    public String getRoleNames() {
+        return roleNames;
+    }
+
+    public void setRoleNames(String roleNames) {
+        this.roleNames = roleNames;
     }
 }

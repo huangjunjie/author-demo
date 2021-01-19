@@ -25,6 +25,18 @@
         <include refid="Base_Column_List"/>
         from sys_login_log
     </select>
+    <select id="findPageByStatus" resultType="com.stone.demo.author.mango.bean.po.SysLoginLog">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_login_log
+        where status = #{status,jdbcType=VARCHAR}
+    </select>
+    <select id="findPageByUserName" resultType="com.stone.demo.author.mango.bean.po.SysLoginLog">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_login_log
+        where user_name = #{userName,jdbcType=VARCHAR}
+    </select>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from sys_login_log
     where id = #{id,jdbcType=BIGINT}

@@ -29,6 +29,12 @@
         <include refid="Base_Column_List"/>
         from sys_log
     </select>
+    <select id="findPageByUserName" resultType="com.stone.demo.author.mango.bean.po.SysLog">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_log
+        where user_name = #{userName,jdbcType=VARCHAR}
+    </select>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from sys_log
     where id = #{id,jdbcType=BIGINT}

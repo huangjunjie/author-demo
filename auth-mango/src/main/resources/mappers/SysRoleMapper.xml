@@ -25,6 +25,24 @@
         <include refid="Base_Column_List"/>
         from sys_role
     </select>
+    <select id="findAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_role
+    </select>
+    <select id="findPageByName" parameterType="java.lang.String" resultMap="BaseResultMap">
+        <bind name="pattern" value="'%' + _parameter.name + '%'" />
+        select
+        <include refid="Base_Column_List" />
+        from sys_role
+        where name like #{pattern}
+    </select>
+    <select id="findByName" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from sys_role
+        where name = #{name,jdbcType=VARCHAR}
+    </select>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from sys_role
     where id = #{id,jdbcType=BIGINT}

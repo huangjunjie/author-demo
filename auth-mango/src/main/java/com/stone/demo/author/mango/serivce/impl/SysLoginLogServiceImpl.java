@@ -3,12 +3,15 @@ package com.stone.demo.author.mango.serivce.impl;
 import com.stone.demo.author.mango.bean.po.SysLoginLog;
 import com.stone.demo.author.mango.bean.vo.PageRequest;
 import com.stone.demo.author.mango.bean.vo.PageResult;
+import com.stone.demo.author.mango.constants.SysConstants;
 import com.stone.demo.author.mango.dao.SysLoginLogMapper;
 import com.stone.demo.author.mango.serivce.SysLoginLogService;
+import com.stone.demo.author.mango.utils.MybatisPageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 /***
  *
@@ -32,7 +35,10 @@ public class SysLoginLogServiceImpl implements SysLoginLogService {
      */
     @Override
     public int save(SysLoginLog record) {
-        return 0;
+        if(record.getId() == null || record.getId() == 0) {
+            return sysLoginLogMapper.insertSelective(record);
+        }
+        return sysLoginLogMapper.updateByPrimaryKeySelective(record);
     }
 
     /***
@@ -43,7 +49,7 @@ public class SysLoginLogServiceImpl implements SysLoginLogService {
      */
     @Override
     public int delete(SysLoginLog record) {
-        return 0;
+        return sysLoginLogMapper.deleteByPrimaryKey(record.getId());
     }
 
     /**
@@ -54,7 +60,10 @@ public class SysLoginLogServiceImpl implements SysLoginLogService {
      */
     @Override
     public int delete(List<SysLoginLog> records) {
-        return 0;
+        for(SysLoginLog record:records) {
+            delete(record);
+        }
+        return SysConstants.SUCCESS_RETURN;
     }
 
     /**
@@ -65,7 +74,7 @@ public class SysLoginLogServiceImpl implements SysLoginLogService {
      */
     @Override
     public SysLoginLog findById(Long id) {
-        return null;
+        return sysLoginLogMapper.selectByPrimaryKey(id);
     }
 
     /**
@@ -76,6 +85,14 @@ public class SysLoginLogServiceImpl implements SysLoginLogService {
      */
     @Override
     public PageResult findPage(PageRequest request) {
-        return null;
+        Optional userName = request.getParams("userName");
+        if(userName.isPresent()) {
+            return MybatisPageHelper.findPage(request, sysLoginLogMapper, "findPageByUserName", userName.get());
+        }
+        Optional status = request.getParams("status");
+        if(status.isPresent()) {
+            return MybatisPageHelper.findPage(request, sysLoginLogMapper, "findPageByStatus", status.get());
+        }
+        return MybatisPageHelper.findPage(request, sysLoginLogMapper);
     }
 }

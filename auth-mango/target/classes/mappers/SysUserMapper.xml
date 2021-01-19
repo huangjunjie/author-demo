@@ -28,10 +28,8 @@
         from sys_user
         where id = #{id,jdbcType=BIGINT}
     </select>
-    <select id="findPage" resultType="com.stone.demo.author.mango.bean.po.SysUser">
-        select
-        <include refid="Base_Column_List"/>
-        from sys_user
+    <select id="findPage" resultMap="BaseResultMap">
+        select u.*, (select d.name from sys_dept d where d.id = u.dept_id) deptName from sys_user u
     </select>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from sys_user
@@ -214,4 +212,20 @@
       del_flag = #{delFlag,jdbcType=TINYINT}
     where id = #{id,jdbcType=BIGINT}
   </update>
+    <select id="findByName" resultMap="BaseResultMap">
+        select u.*, (select d.name from sys_dept d where d.id = u.dept_id) deptName from sys_user u
+    where u.name = #{name,jdbcType=VARCHAR}
+    </select>
+    <select id="findPageByNameAndEmail" resultMap="BaseResultMap">
+        <bind name="patternName" value="'%' + _parameter.name + '%'" />
+        <bind name="patternEmail" value="'%' + _parameter.email + '%'" />
+        select u.*, (select d.name from sys_dept d where d.id = u.dept_id) deptName from sys_user u
+        where u.name like #{patternName}
+        and u.email like #{patternEmail}
+    </select>
+    <select id="findPageByName" resultMap="BaseResultMap">
+        <bind name="pattern" value="'%' + _parameter.name + '%'" />
+        select u.*, (select d.name from sys_dept d where d.id = u.dept_id) deptName from sys_user u
+        where u.name like #{pattern}
+    </select>
 </mapper>
