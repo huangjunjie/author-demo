@@ -15,11 +15,18 @@ import com.stone.demo.author.mango.dao.SysUserRoleMapper;
 import com.stone.demo.author.mango.serivce.SysMenuService;
 import com.stone.demo.author.mango.serivce.SysUserService;
 import com.stone.demo.author.mango.utils.MybatisPageHelper;
+import com.stone.demo.authur.common.utils.DateTimeUtils;
+import com.stone.demo.authur.common.utils.PoiUtils;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
@@ -209,6 +216,62 @@ public class SysUserServiceImpl implements SysUserService {
 
     @Override
     public File createUserExcelFile(PageRequest pageRequest) {
-        return null;
+        PageResult result = findPage(pageRequest);
+        return createUserExcelFile(result.getContent());
+    }
+
+    /**
+     * 创建 用户导出数据
+     *
+     * @param content
+     * @return
+     */
+    private File createUserExcelFile(List<?> content) {
+        if(content == null) {
+            content = new ArrayList<>();
+        }
+
+        Workbook workbook = new XSSFWorkbook();
+        Sheet sheet = workbook.createSheet();
+        Row row0 = sheet.createRow(0);
+        int columnIndex = 0;
+        row0.createCell(columnIndex).setCellValue("No");
+        row0.createCell(++columnIndex).setCellValue("ID");
+        row0.createCell(++columnIndex).setCellValue("用户名");
+        row0.createCell(++columnIndex).setCellValue("昵称");
+        row0.createCell(++columnIndex).setCellValue("机构");
+        row0.createCell(++columnIndex).setCellValue("角色");
+        row0.createCell(++columnIndex).setCellValue("邮箱");
+        row0.createCell(++columnIndex).setCellValue("手机号");
+        row0.createCell(++columnIndex).setCellValue("状态");
+        row0.createCell(++columnIndex).setCellValue("头像");
+        row0.createCell(++columnIndex).setCellValue("创建人");
+        row0.createCell(++columnIndex).setCellValue("创建时间");
+        row0.createCell(++columnIndex).setCellValue("最后更新人");
+        row0.createCell(++columnIndex).setCellValue("最后更新时间");
+
+
+        for(int i = 0; i < content.size(); i++ ) {
+            SysUser user = (SysUser) content.get(i);
+            Row row = sheet.createRow(i+1);
+            for (int j = 0; j < columnIndex +1 ; j++) {
+                row.createCell(j);
+            }
+            columnIndex = 0;
+            row.getCell(columnIndex).setCellValue(i+1);
+            row.getCell(++columnIndex).setCellValue(user.getId());
+            row.getCell(++columnIndex).setCellValue(user.getName());
+            row.getCell(++columnIndex).setCellValue(user.getNickName());
+            row.getCell(++columnIndex).setCellValue(user.getDeptId());
+            row.getCell(++columnIndex).setCellValue(user.getRoleNames());
+            row.getCell(++columnIndex).setCellValue(user.getEmail());
+            row.getCell(++columnIndex).setCellValue(user.getStatus());
+            row.getCell(++columnIndex).setCellValue(user.getAvatar());
+            row.getCell(++columnIndex).setCellValue(user.getCreateBy());
+            row.getCell(++columnIndex).setCellValue(DateTimeUtils.getDateTime(user.getCreateTime()));
+            row.getCell(++columnIndex).setCellValue(user.getLastUpdateBy());
+            row.getCell(++columnIndex).setCellValue(DateTimeUtils.getDateTime(user.getLastUpdateTime()));
+        }
+        return PoiUtils.createExcelFile(workbook, "download_user");
     }
 }
