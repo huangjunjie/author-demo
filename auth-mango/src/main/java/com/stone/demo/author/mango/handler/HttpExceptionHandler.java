@@ -1,4 +1,4 @@
-package com.stone.demo.author.mango.handle;
+package com.stone.demo.author.mango.handler;
 
 import com.stone.demo.author.mango.bean.vo.HttpResult;
 import org.slf4j.Logger;

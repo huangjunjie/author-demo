@@ -7,6 +7,7 @@ import com.stone.demo.author.mango.serivce.SysLoginLogService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,12 +32,14 @@ public class SysLoginLogController {
     private SysLoginLogService sysLoginLogService;
 
     @ApiOperation("分页登入日志")
+    @PreAuthorize("hasAuthority('sys:loginlog:view')")
     @PostMapping(value="/findPage")
     public HttpResult findPage(@RequestBody PageRequest pageRequest) {
         return HttpResult.ok(sysLoginLogService.findPage(pageRequest));
     }
 
     @ApiOperation("删除登入日志")
+    @PreAuthorize("hasAuthority('sys:loginlog:delete')")
     @PostMapping(value="/delete")
     public HttpResult delete(@RequestBody List<SysLoginLog> records) {
         return HttpResult.ok(sysLoginLogService.delete(records));

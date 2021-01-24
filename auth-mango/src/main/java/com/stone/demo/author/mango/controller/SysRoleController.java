@@ -10,6 +10,7 @@ import com.stone.demo.author.mango.serivce.SysRoleService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -38,6 +39,7 @@ public class SysRoleController {
     private SysRoleMapper sysRoleMapper;
 
     @ApiOperation("角色保存接口")
+    @PreAuthorize("hasAuthority('sys:role:add') AND hasAuthority('sys:role:edit')")
     @PostMapping(value="/save")
     public HttpResult save(@RequestBody SysRole record) {
         SysRole role = sysRoleService.findById(record.getId());
@@ -54,30 +56,35 @@ public class SysRoleController {
     }
 
     @ApiOperation("角色删除接口")
+    @PreAuthorize("hasAuthority('sys:role:delete')")
     @PostMapping(value="/delete")
     public HttpResult delete(@RequestBody List<SysRole> records) {
         return HttpResult.ok(sysRoleService.delete(records));
     }
 
     @ApiOperation("角色分页接口")
+    @PreAuthorize("hasAuthority('sys:role:view')")
     @PostMapping(value="/findPage")
     public HttpResult findPage(@RequestBody PageRequest pageRequest) {
         return HttpResult.ok(sysRoleService.findPage(pageRequest));
     }
 
     @ApiOperation("查询所有角色")
+    @PreAuthorize("hasAuthority('sys:role:view')")
     @GetMapping(value="/findAll")
     public HttpResult findAll() {
         return HttpResult.ok(sysRoleService.findAll());
     }
 
     @ApiOperation("查询角色相关菜单")
+    @PreAuthorize("hasAuthority('sys:role:view')")
     @GetMapping(value="/findRoleMenus")
     public HttpResult findRoleMenus(@RequestParam Long roleId) {
         return HttpResult.ok(sysRoleService.findRoleMenus(roleId));
     }
 
     @ApiOperation("保存角色菜单接口")
+    @PreAuthorize("hasAuthority('sys:role:view')")
     @PostMapping(value="/saveRoleMenus")
     public HttpResult saveRoleMenus(@RequestBody List<SysRoleMenu> records) {
         for(SysRoleMenu record:records) {
