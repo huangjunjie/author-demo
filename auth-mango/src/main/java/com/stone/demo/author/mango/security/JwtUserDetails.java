@@ -9,7 +9,11 @@ import java.util.Collection;
 /***
  *
  * @Class JwtUserDetails
- * @Descrip TODO
+ * @Descrip 用户数据具体保存位置
+ *          用户自定义
+ *          + authorities 授权 @see{GrantedAuthorityImpl}
+ *          + password    密码
+ *          + username    用户
  * @author Stone
  * @data 21-1-24  上午1:58
  * @Version 1.0

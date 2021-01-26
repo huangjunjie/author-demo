@@ -8,7 +8,10 @@ import java.util.Collection;
 /***
  *
  * @Class JwtAuthenticationToken
- * @Descrip TODO
+ * @Descrip 顶级包装类使用Token 等同于 Authencation 可以直接放入 SecurityContextHolder
+ *          + principal   ==> UserDetails  @see{JwtUserDetails}
+ *          + credentails ==> 登入凭证 等价于 加密过的密码
+ *          + authorities ==> 授权集合
  * @author Stone
  * @data 21-1-24  上午1:52
  * @Version 1.0

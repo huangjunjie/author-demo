@@ -5,7 +5,7 @@ import org.springframework.security.core.GrantedAuthority;
 /***
  *
  * @Class GrantedAuthorityImpl
- * @Descrip TODO
+ * @Descrip 授权集合
  * @author Stone
  * @data 21-1-24  上午1:53
  * @Version 1.0
