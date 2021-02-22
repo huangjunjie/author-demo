@@ -4,6 +4,15 @@ server:
 spring:
   application:
     name: auth-mango-service
+  #cloud config
+  cloud:
+    consul:
+      host: localhost
+      port: 8900
+      discovery:
+        serviceName: ${spring.application.name}
+        healthCheckPath: /actuator/health
+        healthCheckInterval: 1s
 
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource  #当前数据源操作类型
@@ -71,3 +80,12 @@ pagehelper:
   reasonable: true
   support-methods-arguments: true
   params: count=countSql
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS

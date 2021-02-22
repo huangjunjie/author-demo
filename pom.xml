@@ -10,6 +10,7 @@
     <modules>
         <module>author-common</module>
         <module>auth-mango</module>
+        <module>auth-backup</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -34,6 +35,7 @@
         <kaptcha.version>2.3.2</kaptcha.version>
         <security.version>2.2.10.RELEASE</security.version>
         <jwt.version>0.9.1</jwt.version>
+        <spring-cloud.version>Hoxton.SR9</spring-cloud.version>
     </properties>
 
 
@@ -64,7 +66,7 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-actuator</artifactId>
+                <artifactId>spring-boot-starter-actuator</artifactId>
                 <version>${spring.boot.version}</version>
             </dependency>
             <dependency>
@@ -151,6 +153,17 @@
                 <artifactId>jjwt</artifactId>
                 <version>${jwt.version}</version>
             </dependency>
+
+            <!-- spring cloud -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+
         </dependencies>
 
     </dependencyManagement>

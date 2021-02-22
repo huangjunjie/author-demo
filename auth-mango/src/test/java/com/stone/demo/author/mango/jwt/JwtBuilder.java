@@ -18,7 +18,7 @@ public class JwtBuilder {
     public static void main(String[] args) {
         String token = Jwts.builder()
 //        主题 放入用户名
-                .setSubject("niceyoo")
+                .setSubject("liubei")
 //        自定义属性 放入用户拥有请求权限
                 .claim("authorities","admin")
 //        失效时间
