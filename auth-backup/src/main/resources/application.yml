@@ -1,14 +1,13 @@
 server:
-  port: 8001
+  port: 8002
 
 spring:
   application:
-    name: auth-mango-service
+    name: auth-backup-service
   boot:
     admin:
       client:
         url: "http://localhost:8000"
-  #cloud config
   cloud:
     consul:
       host: localhost
@@ -70,20 +69,6 @@ spring:
         #启用
         enabled: true
 
-mybatis:
-  mapperLocations: classpath*:mappers/*.xml
-
-logging:
-  config: classpath:logback-spring.xml
-  level:
-    dao: debug
-    org:
-      mybatis: debug
-
-pagehelper:
-  reasonable: true
-  support-methods-arguments: true
-  params: count=countSql
 
 management:
   endpoints:

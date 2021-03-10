@@ -11,6 +11,7 @@
         <module>author-common</module>
         <module>auth-mango</module>
         <module>auth-backup</module>
+        <module>auth-monitor</module>
     </modules>
     <packaging>pom</packaging>
 
