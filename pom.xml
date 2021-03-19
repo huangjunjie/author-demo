@@ -15,6 +15,7 @@
         <module>auth-producer</module>
         <module>auth-producer2</module>
         <module>auth-consumer</module>
+        <module>auth-hystrix</module>
     </modules>
     <packaging>pom</packaging>
 
