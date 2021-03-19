@@ -1,4 +1,4 @@
-package com.stone.demo.authur.common.utils;
+package com.stone.demo.author.common.utils;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedInputStream;

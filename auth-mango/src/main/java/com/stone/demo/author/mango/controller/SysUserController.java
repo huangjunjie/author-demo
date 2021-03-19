@@ -6,7 +6,7 @@ import com.stone.demo.author.mango.bean.vo.PageRequest;
 import com.stone.demo.author.mango.constants.SysConstants;
 import com.stone.demo.author.mango.serivce.SysUserService;
 import com.stone.demo.author.mango.utils.PasswordUtils;
-import com.stone.demo.authur.common.utils.FileUtils;
+import com.stone.demo.author.common.utils.FileUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

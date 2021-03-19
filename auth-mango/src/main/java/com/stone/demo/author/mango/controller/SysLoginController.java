@@ -9,7 +9,7 @@ import com.stone.demo.author.mango.security.JwtAuthenticationToken;
 import com.stone.demo.author.mango.serivce.SysUserService;
 import com.stone.demo.author.mango.utils.PasswordUtils;
 import com.stone.demo.author.mango.utils.SecurityUtils;
-import com.stone.demo.authur.common.utils.IOUtils;
+import com.stone.demo.author.common.utils.IOUtils;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
