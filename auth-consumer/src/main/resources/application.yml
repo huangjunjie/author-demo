@@ -1,0 +1,31 @@
+server:
+  port: 8005
+
+spring:
+  application:
+    name: auth-consumer-service
+  cloud:
+    consul:
+      host: localhost
+      port: 8900
+      discovery:
+        serviceName: ${spring.application.name}
+        healthCheckPath: /actuator/health
+        healthCheckInterval: 1s
+  boot:
+    admin:
+      client:
+        url: "http://localhost:8000"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+feign:
+  hystrix:
+    enabled: true

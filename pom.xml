@@ -12,6 +12,9 @@
         <module>auth-mango</module>
         <module>auth-backup</module>
         <module>auth-monitor</module>
+        <module>auth-producer</module>
+        <module>auth-producer2</module>
+        <module>auth-consumer</module>
     </modules>
     <packaging>pom</packaging>
 

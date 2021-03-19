@@ -1,0 +1,33 @@
+server:
+  port: 8004
+
+spring:
+  application:
+    name: auth-producer-service
+  cloud:
+    consul:
+      host: localhost
+      port: 8900
+      discovery:
+        serviceName: ${spring.application.name}
+        instance-id: ${spring.application.name}:${server.port}
+        healthCheckPath: /actuator/health
+        healthCheckInterval: 1s
+  boot:
+    admin:
+      client:
+        url: "http://localhost:8000"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+#ribbon 轮训策略
+product:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule

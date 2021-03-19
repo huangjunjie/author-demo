@@ -27,7 +27,7 @@ public class SwaggerConfiguration {
         return new Docket(DocumentationType.SWAGGER_2)
                 .pathMapping("/")
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.stone.demo.author.mango.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.stone.demo.author.mango.com.stone.demo.author.producer.controller"))
                 .paths(PathSelectors.any())
                 .build().globalOperationParameters(parameters);
     }
