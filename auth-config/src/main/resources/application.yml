@@ -14,7 +14,20 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/huangjunjie/config-repo.git
-          search-paths:
+          uri: https://gitee.com/huangjunjies/config-repo.git
           username: 1157510753@qq.com
-          password: a123456226212+
+          password: 123456226212+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
