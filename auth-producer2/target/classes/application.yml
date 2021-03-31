@@ -1,27 +1,22 @@
 server:
-  port: 8005
+  port: 8004
 
 spring:
   application:
-    name: auth-consumer-service
+    name: auth-producer-service
   cloud:
     consul:
       host: localhost
       port: 8900
       discovery:
         serviceName: ${spring.application.name}
+        instance-id: ${spring.application.name}:${server.port}
         healthCheckPath: /actuator/health
         healthCheckInterval: 1s
   boot:
     admin:
       client:
         url: "http://localhost:8000"
-
-  zipkin:
-    base-url: http://127.0.0.1:9411/
-  sleuth:
-    sampler:
-      probability: 1
 
 management:
   endpoints:
@@ -32,7 +27,7 @@ management:
     health:
       show-details: ALWAYS
 
-feign:
-  hystrix:
-    enabled: true
-
+#ribbon 轮训策略
+product:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule

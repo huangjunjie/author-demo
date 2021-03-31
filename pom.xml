@@ -17,6 +17,7 @@
         <module>auth-consumer</module>
         <module>auth-hystrix</module>
         <module>auth-zuul</module>
+        <module>auth-config</module>
     </modules>
     <packaging>pom</packaging>
 

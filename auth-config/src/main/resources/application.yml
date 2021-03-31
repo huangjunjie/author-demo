@@ -1,0 +1,20 @@
+server:
+  port: 8020
+spring:
+  application:
+    name: auth-config
+  cloud:
+    consul:
+      host: localhost
+      port: 8900
+      discovery:
+        serviceName: ${spring.application.name}
+        healthCheckPath: /actuator/health
+        healthCheckInterval: 1s
+    config:
+      server:
+        git:
+          uri: https://github.com/huangjunjie/config-repo.git
+          search-paths:
+          username: 1157510753@qq.com
+          password: a123456226212+
