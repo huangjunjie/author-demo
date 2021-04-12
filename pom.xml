@@ -18,6 +18,7 @@
         <module>auth-hystrix</module>
         <module>auth-zuul</module>
         <module>auth-config</module>
+        <module>auth-authorization</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -180,6 +181,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.1.8.RELEASE</version>
                 <configuration>
                     <fork>true</fork>
                     <addResources>true</addResources>
