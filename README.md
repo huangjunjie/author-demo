@@ -31,3 +31,5 @@ AvailabilityFilteringRule 可用过滤策略 过滤掉那些因为一直连接�
 ##### 5.2 config
 启动项目后，访问http://localhost:8020/config/dev/main 即可以看到配置信息 这个地址要注意的是 http://localhost:9090/{配置文件名前缀}/{环境类型}/{仓库分支标签}
 http://localhost:8020/main/consumer-dev.properties 这个地址要注意的是 http://localhost:9090/{仓库分支标签}/{文件名称}
+
+

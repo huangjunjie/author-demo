@@ -26,7 +26,7 @@ public class PassEncoderUtils {
         System.out.println(passEncoder2.matches("admin123456",scret));
         String secret = passEncoder.encode("admin123456");
         System.out.println(passEncoder.matches("admin123456",secret));
-
+        System.out.println(passEncoder.encode("123456"));
     }
 }
 

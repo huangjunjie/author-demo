@@ -130,8 +130,9 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
         tokenServices.setAccessTokenValiditySeconds(60);
         // tokenServices.setAccessTokenValiditySeconds(60 * 60 * 12);
         // refresh_token默认30天
-        tokenServices.setAccessTokenValiditySeconds(120);
+        tokenServices.setAccessTokenValiditySeconds(60 * 60 * 1 );
         // tokenServices.setRefreshTokenValiditySeconds(60 * 60 * 24 * 7);
+        tokenServices.setReuseRefreshToken(true);
         return tokenServices;
     }
 

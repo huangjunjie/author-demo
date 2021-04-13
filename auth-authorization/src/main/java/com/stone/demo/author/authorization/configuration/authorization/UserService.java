@@ -32,6 +32,15 @@ public class UserService implements UserDetailsService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
+    @PostConstruct
+    public void initData() {
+        String password = passwordEncoder.encode("123456");
+        userList = new ArrayList<>();
+
+        userList.add(new User("admin",password, AuthorityUtils.commaSeparatedStringToAuthorityList("admin")));
+        userList.add(new User("andy",password, AuthorityUtils.commaSeparatedStringToAuthorityList("client")));
+        userList.add(new User("mark",password, AuthorityUtils.commaSeparatedStringToAuthorityList("client")));
+    }
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
