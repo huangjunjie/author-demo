@@ -19,6 +19,7 @@
         <module>auth-zuul</module>
         <module>auth-config</module>
         <module>auth-authorization</module>
+        <module>auth-oauth2-jwt</module>
     </modules>
     <packaging>pom</packaging>
 
