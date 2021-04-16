@@ -1,9 +1,0 @@
-com/stone/demo/author/consumer/AuthConsumerApplication.class
-com/stone/demo/author/consumer/controller/RibbonHelloController.class
-com/stone/demo/author/consumer/service/impl/AuthProducerHystrix.class
-com/stone/demo/author/consumer/configuration/RetryConfiguration.class
-com/stone/demo/author/consumer/controller/ServiceController.class
-com/stone/demo/author/consumer/clients/AuthProducerService.class
-com/stone/demo/author/consumer/controller/FeignHelloController.class
-com/stone/demo/author/consumer/controller/SpringConfigController.class
-com/stone/demo/author/consumer/controller/CallHelloController.class

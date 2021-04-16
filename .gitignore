@@ -38,7 +38,7 @@ Thumbs.db
 # Eclipse
 .classpath
 .project
-target
+.target
 .settings
 
 # Idea
