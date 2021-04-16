@@ -1,0 +1,9 @@
+/media/stone/SOURCE/idea_projects/author-demo/auth-consumer/src/main/java/com/stone/demo/author/consumer/controller/RibbonHelloController.java
+/media/stone/SOURCE/idea_projects/author-demo/auth-consumer/src/main/java/com/stone/demo/author/consumer/clients/AuthProducerService.java
+/media/stone/SOURCE/idea_projects/author-demo/auth-consumer/src/main/java/com/stone/demo/author/consumer/service/impl/AuthProducerHystrix.java
+/media/stone/SOURCE/idea_projects/author-demo/auth-consumer/src/main/java/com/stone/demo/author/consumer/controller/SpringConfigController.java
+/media/stone/SOURCE/idea_projects/author-demo/auth-consumer/src/main/java/com/stone/demo/author/consumer/controller/CallHelloController.java
+/media/stone/SOURCE/idea_projects/author-demo/auth-consumer/src/main/java/com/stone/demo/author/consumer/controller/FeignHelloController.java
+/media/stone/SOURCE/idea_projects/author-demo/auth-consumer/src/main/java/com/stone/demo/author/consumer/controller/ServiceController.java
+/media/stone/SOURCE/idea_projects/author-demo/auth-consumer/src/main/java/com/stone/demo/author/consumer/configuration/RetryConfiguration.java
+/media/stone/SOURCE/idea_projects/author-demo/auth-consumer/src/main/java/com/stone/demo/author/consumer/AuthConsumerApplication.java

@@ -1,0 +1,24 @@
+server:
+  port: 8010
+
+spring:
+  application:
+    name: auth-zuul
+  cloud:
+    consul:
+      host: localhost
+      port: 8900
+      discovery:
+        serviceName: ${spring.application.name}
+        instance-id: ${spring.application.name}:${server.port}
+        healthCheckPath: /actuator/health
+        healthCheckInterval: 1s
+
+#zuul:
+#  routes:
+#    ribbon:
+#      path: /ribbon/**
+#      serviceId: auth-consumer
+#    feign:
+#      path: /feign/**
+#      serviceId: auth-consumer #转发到消费者

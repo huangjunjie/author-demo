@@ -1,0 +1,3 @@
+com/stone/demo/author/configuration/AuthFallBackProvider.class
+com/stone/demo/author/AuthZuulApplication.class
+com/stone/demo/author/configuration/AuthZuulFilter.class
