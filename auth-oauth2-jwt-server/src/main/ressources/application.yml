@@ -1,0 +1,19 @@
+server:
+  port: 9998
+spring:
+  application:
+    name: auth-oauth2-jwt-server
+  cloud:
+    consul:
+      host: localhost
+      port: 8900
+      discovery:
+        serviceName: ${spring.application.name}
+        healthCheckPath: /actuator/health
+        healthCheckInterval: 1s
+  session:
+    store-type: redis
+  redis:
+    host: 127.0.0.1
+    port: 6379
+

@@ -1,0 +1,35 @@
+server:
+  port: 9997
+  servlet:
+    session:
+      cookie:
+        # 防止cookie冲突，冲突会导致登录验证不通过
+        name: OAUTH2-CLIENT-SESSIONID
+
+oauth2-service-url: http://localhost:9998
+
+spring:
+  application:
+    name: oauth2-client
+  cloud:
+    consul:
+      host: localhost
+      port: 8900
+      discovery:
+        serviceName: ${spring.application.name}
+        healthCheckPath: /actuator/health
+        healthCheckInterval: 1s
+
+security:
+  # 与oauth2-server对应的配置 跳转并配置应用
+  oauth2:
+    client:
+      client-id: admin
+      client-secret: admin123456
+      user-authorization-uri: ${oauth2-service-url}/oauth/authorize
+      access-token-uri: ${oauth2-service-url}/oauth/token
+    resource:
+      jwt:
+        #访问公钥
+        key-uri: ${oauth2-service-url}/oauth/token_key
+
