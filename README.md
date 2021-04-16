@@ -15,20 +15,56 @@
   其中项目架构为
 
   **author-demo**
-  |---  ***auth-mango***                   spring-boot授权认证模块
-  |---  ***auth-backup***                   sql数据备份模块
-  |---  ***author-common***            认证授权项目通用模块
-  |---  ***author-db***                       认证授权项目使用SQL集合模块
-  |---  ***auth-monitor***                 spring-boot-admin 服务监控模块
-  |---  ***auth-consumer***              服务消费者
-  |---  ***auth-producer***                服务提供者
-  |---  ***auth-producer2***              服务提供者
-  |---  ***auth-hystrix***                    hystrix服务监控者
-  |---  ***auth-zuul***                          服务网关
-  |---  ***auth-config***                      服务配置
-  |---  ***auth-authorization***         spring-cloud授权认证模块
-  |---  ***auth-oauth2-jwt-client***   SSO客户端
-  |---  ***auth-oauth2-jwt-server***  SSO服务端
+.
+├── auth-authorization              spring-cloud授权认证模块
+│   ├── pom.xml
+│   └── src
+├── auth-backup                         sql数据备份模块 
+│   ├── pom.xml
+│   └── src
+├── auth-config                            服务配置
+│   ├── pom.xml
+│   └── src
+├── auth-consumer                      服务消费者
+│   ├── pom.xml
+│   ├── src
+│   └── start.bash
+├── auth-hystrix                             hystrix服务监控者  
+│   ├── pom.xml
+│   └── src
+├── auth-mango                            spring-boot授权认证模块
+│   ├── pom.xml
+│   └── src
+├── auth-monitor                            spring-boot-admin 服务监控模块
+│   ├── pom.xml
+│   └── src
+├── auth-oauth2-jwt-client             SSO客户端
+│   ├── auth-oauth2-jwt-client.iml
+│   ├── pom.xml
+│   └── src
+├── auth-oauth2-jwt-server             SSO服务端
+│   ├── auth-oauth2-jwt-server.iml
+│   ├── pom.xml
+│   └── src
+├── author-common                          认证授权项目通用模块
+│   ├── pom.xml
+│   └── src
+├── author-db                                     认证授权项目使用SQL集合模块
+│   ├── author-db.iml
+│   └── src
+├── auth-producer                              服务提供者
+│   ├── pom.xml
+│   └── src
+├── auth-producer2                             服务提供者
+│   ├── pom.xml
+│   └── src
+├── auth-zuul                                         服务网关
+│   ├── pom.xml
+│   └── src
+├── logs
+├── pom.xml
+├── README.md
+└── tree.txt
 
 
 >  本项目鸣谢徐丽件老师的[《Spring Boot + Spring Cloud + Vue + Element项目实战手把手教你开发权限管理系统》](https://gitee.com/liuge1988/mango-platform/tree/master) 以及 ThinkWo老师的  [Spring Cloud入门系列汇总 ](https://blog.csdn.net/ThinkWon/article/details/103766368)
